@@ -129,9 +129,9 @@ while running:
     # 绘制蛇的身体
     for i, block in enumerate(snake_pos):
         if i == 0:
-            pygame.draw.rect(window, BLUE, pygame.Rect(block[0], block[1], snake_size, snake_size))
-        elif i == len(snake_pos) - 1:
             pygame.draw.rect(window, YELLOW, pygame.Rect(block[0], block[1], snake_size, snake_size))
+        elif i == len(snake_pos) - 1:
+            pygame.draw.rect(window, BLUE, pygame.Rect(block[0], block[1], snake_size, snake_size))
         else:
             pygame.draw.rect(window, RED, pygame.Rect(block[0], block[1], snake_size, snake_size))
 
